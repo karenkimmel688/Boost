@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Boost</title>
+    <link href = "LandPageStyle.css" rel= "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <nav class = "navbar">
+      <a class = "nav-logo"> Boost</a>
+      <ul>
+	<li><a href = "LandingP.html"> Home</a></li>
+        <li><a href = "About.html"> About</a></li>
+        <li><a href = "Contact.html"> Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class= "content">
+        <h1>Welcome to BOOST</h1>
+        <p> Where we are dedicated to helping you find used classic cars!</p>
+        <a href="loginPage.html"><button class = "btns"> Log In</button></a>
+        <a href="PracMainPage.html"><button class = "btns"> Browse</button></a>
+
+      </div>
+
+      <div>
+	<img src ="images/circleImage.jpg"/>
+     </div>
+
+
+    </main>
+
+  </body>
+  </html>
+
+
+
