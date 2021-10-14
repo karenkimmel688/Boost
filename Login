@@ -1,57 +1,48 @@
 <!DOCTYPE html>
-<html lang= "en" dir= "ltr">
-    <!-- Head contains the meta information about the HTML page. -->
-    <head>
-      <!-- This specifies the title of the page. -->
-        <meta charset="utf-8">
-        <title>Boost | Sign in</title>
-        <link rel="stylesheet"   href="loginPage.css"></head>
-
-
-
-
-    <!---------- Header Design ---------->
-    <!-----Here we will have our menu bar location on the right---->
-    <!-----Here we will also have a logo on the menu bar location but on the left side.---->
-
-
-</div>
-
-<body>
-<div class="center">
-  <h1>Login</h1>
-
-<!------ Login Form ------>
- <form method="post" action="Login.php">
-
-<!------ Email Here ------>
-    <div class="txt_field">
-      <input type="text" name="Email" placeholder="Enter Email" id="Email" required />
-    </div>
-
-
-   <!------ Password Here ------>
-     <div class="txt_field">
-     <input type="text" name="Password" placeholder="Enter Password" id="Password" required />
-    </div>
-
-<!------ Login Button Here ------>
-    <input class="submit" type="submit" value="Login">
-    <p><a href="ResetPassword.html"> Forgot Password?</a></p>
-
-  <!--   <div class="pass">Forgot Password?</div>  -->
-
-<div class="signup_link">
-  Not a member? <a href="CreateAccount.html">Signup</a>
-
-</div>
-</form>
-</div>
-
-
-</div>
-
-</body>
-
+<html>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="LoginPage.css">
+   <head>
+      <title>Boost | Login</title>
+      <!-- This specifies tab title of the page. -->
+      <!-- Menu Bar. -->
+      <nav class="navbar">
+         <a class="nav-logo">Boost</a>
+         <ul>
+            <li><a href="LandingP.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </head>
+   <body>
+      <div class="container">
+         <div class="title">Login</div>
+         <!------ Login Form ------>
+         <form method="post" action="Login.php">
+            <div class="user-details">
+               <!------ Email Here ------>
+               <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" name="Email" placeholder="Enter Email" id="Email" required />
+               </div>
+               <!------ Password Here ------>
+               <div class="input-box">
+                  <span class="details">Password</span>
+                  <input type="text" name="Password" placeholder="Enter Password" id="Password" required />
+               </div>
+            </div>
+            <!------ Forgot Password Here ------>
+            <div class="forgot-password"><a href="ResetPassword.html"> Forgot Password?</a></div>
+            <!------ SignUp-Link Here ------>
+            <div class="SignUp-Link">Not a member? <a href="CreateAccount.html">Signup</a></div>
+            <!------ Login Button Here ------>
+            <div class="button">
+               <input type="submit" name="registration" id="register" value="Login">
+            </div>
+         </form>
+      </div>
+   </body>
 </html>
-
