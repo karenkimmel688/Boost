@@ -1,69 +1,77 @@
+<!------ Author Karen Kimmel "Create Account Form" ------>
 <!DOCTYPE html>
 <html>
-   <meta charset="utf-8"/>
-   <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
-   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"/>
-   <link rel="stylesheet" type="text/css" href="CreateAccount.css"/>
-   <head>
-      <title>Boost | Create Account</title>
-      <!-- This specifies tab title of the page. -->
-      <!-- Menu Bar. -->
-      <nav class="navbar">
-         <a class="nav-logo">Boost</a>
-         <ul>
-            <li><a href="LandingP.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-         </ul>
-      </nav>
-   </head>
-   <body>
-      <div class="container">
-         <div class="title">Create Account</div>
-         <!-- Create Account Form. -->
-         <form method="post" action="AddAccount.php">
-            <div class="user-details">
-               <!------ Username Here ------>
-               <div class="input-box">
-                  <span class="details">Username</span>
-                  <input type="text" name="UserName" placeholder="Enter Username" id="UserName" required />
-               </div>
-               <!------ FirstName Here ------>
-               <div class="input-box">
-                  <span class="details">First Name</span>
-                  <input type="text" name="FirstName" placeholder="Enter First Name" id="FirstName" required />
-               </div>
-               <!------ LastName Here ------>
-               <div class="input-box">
-                  <span class="details">Last Name</span>
-                  <input type="text" name="LastName" placeholder="Enter Last Name" id="LastName" required />
-               </div>
-               <!------ E-mail Address Here. ------>
-               <div class="input-box">
-                  <span class="details">Email</span>
-                  <input type="text" name="Email" placeholder="Enter E-mail Address" id="Email" required />
-               </div>
-               <!------ Password Here. ------>
-               <div class="input-box">
-                  <span class="details">Password</span>
-                  <input type="text" name="Password" placeholder="Enter Password" id="Password" required />
-               </div>
-               <!------ State Here. ------>
-               <div class="input-box">
-                  <span class="details">State</span>
-                  <input type="text" name="State" placeholder="State" id="State" required />
-               </div>
-               <!------ ZipCode Here. ------>
-               <div class="input-box">
-                  <span class="details">Zipcode</span>
-                  <input type="text" name="ZipCode" placeholder="ZipCode" id="ZipCode" required />
-               </div>
-            </div>
-            <!------ Create Account Button. ------>
-            <div class="button">
-               <input type="submit" name="registration" id="register" value="Continue" />
-            </div>
-         </form>
-      </div>
-   </body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="CreateAccount.css" />
+    <head>
+        <title>Boost | Create Account</title>
+        <!-- This specifies tab title of the page. -->
+        <!-- Menu Bar. -->
+        <nav class="navbar">
+            <a class="nav-logo">Boost</a>
+            <ul>
+                <li><a href="LandingP.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Create Account</div>
+            <!-- Create Account Form. -->
+            <form method="post" action="AddAccount.php">
+                <div class="user-details">
+                    <!------ Username Here ------>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" name="UserName" placeholder="Enter Username" id="UserName" required />
+                    </div>
+                    <!------ FirstName Here ------>
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" name="FirstName" placeholder="Enter First Name" id="FirstName" required />
+                    </div>
+                    <!------ LastName Here ------>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" name="LastName" placeholder="Enter Last Name" id="LastName" required />
+                    </div>
+                    <!------ E-mail Address Here. ------>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="Email" placeholder="Enter E-mail Address" id="Email" required />
+                    </div>
+                    <!------ Password Here. ------>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input
+                            type="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters:"
+                            name="Password"
+                            placeholder="Enter Password"
+                            id="Password"
+                            required />
+                    </div>
+                    <!------ State Here. ------>
+                    <div class="input-box">
+                        <span class="details">State</span>
+                        <input type="text" name="State" placeholder="State" id="State" required />
+                    </div>
+                    <!------ ZipCode Here. ------>
+                    <div class="input-box">
+                        <span class="details">Zipcode</span>
+                        <input type="number" name="ZipCode" placeholder="ZipCode" id="ZipCode" required />
+                    </div>
+                </div>
+                <!------ Create Account Button. ------>
+                <div class="button">
+                    <input type="submit" name="registration" id="register" value="Continue" />
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
