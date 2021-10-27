@@ -1,0 +1,158 @@
+/* Author Cindy Salpa "NAVBAR" */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #000;
+  font-family: 'Karla';
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Karla';
+  font-size: .5em;
+}
+
+/* POSITIONS THE LOGO AND THE NAVBAR */
+nav .navbar {
+  height: 100%;
+  /* max-width: 1250px; */
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+}
+
+/* STYLES THE LOGO "BOOST" */
+.navbar .logo a {
+  letter-spacing: 7px;
+  font-size: 6em;
+  font-family: 'Karla';
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* POSITIONS THE LINKS OF THE NAVBAR */
+nav .navbar .nav-links {
+  line-height: 70px;
+  height: 100%;
+}
+
+/* FIXES THE NAVBAR LINKS POSITION */
+nav .navbar .links {
+  display: flex;
+}
+
+/* FIXES THE NAVBAR AND THE LINKS INSIDE THE DROPDOWN */
+nav .navbar .links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+
+/* STYLES THE NAVBAR LINKS */
+nav .navbar .links li a {
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* CREATES THE ARROW FOR ACCOUNT */
+nav .navbar .links li .arrow {
+  height: 100%;
+  width: 22px;
+  font-size: 17px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* CREATES MOVEMENT FOR THE ARROW FOR ACCOUNT */
+.links li:hover .js-arrow {
+  transform: rotate(180deg);
+}
+
+/* THIS CONTROLS/STYLE THE DROPDOWN MENU LINKS */
+nav .navbar .links li .sub-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  line-height: 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+
+/* THIS CREATES THE DROPDOWN MENU BLOCK */
+nav .navbar .links li:hover .js-sub-menu {
+  display: block;
+}
+
+/* THIS ADDS THE UNDERLINE AFFECT TO THE DROPDOWN MENU */
+.navbar .links li .sub-menu li a:hover {
+   background-color: none; 
+   text-decoration: underline;
+}
+
+/* THIS ADDS STYLE TO THE LINKS OF THE DROPDOWN MENU */
+.navbar .links li .sub-menu a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* FIXES THE POSTION FOR THE NAVBAR LINKS */
+.navbar .nav-links .logo {
+  display: none;
+}
+
+/* FIXES THE POSTION FOR LOGO */
+.navbar .bx-menu {
+  display: none;
+}
+
+/* Author Karen Kimmel "My Listings.CSS" */
+/* STYLE FOR MY LISTINGS STARTS HERE */
+table {
+  width: 60%;
+  text-align: center;
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  border: 2px solid black;
+  padding-top: 10%;
+  padding-left: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+tr {
+  background-color: white;
+}
