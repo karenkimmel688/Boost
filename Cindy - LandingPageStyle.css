@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.showcase_video {
+  position: absolute;
+  object-fit: contain;
+  opacity: 0.8;
+  width: auto;
+  height: auto;
+  }
+
+
+.navbar{
+    
+    color: white;
+    width: 100%;
+    line-height: 80px;
+    height:80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: relative;
+    top:0;
+    left:0;
+    font-family: 'Karla';
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: #d8d8d8;
+
+}
+
+.navbar a.nav-logo{
+    float: left;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family:'Karla';
+    color: white;
+    font-weight: bold;
+
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height:inherit;
+    padding: 0 50px;
+
+}
+
+.navbar ul li{
+
+    display: inline-block;
+}
+
+
+.navbar ul li a{
+
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+
+}
+
+
+.navbar ul li a:hover{
+    background-color:gray;
+}
+
+a:hover {
+	color: white;
+}
+
+
+body{
+    background-color: #000;
+}
+.content{
+    font-family: 'Karla';
+    color: white;
+    margin-top: 20%;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+main{
+
+    display: grid;
+    grid-template-comlumns: 1fr 1fr;
+}
+
+.btns{
+
+    margin-top: 20px;
+    background: #d8d8d8;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+
+.btns:hover{
+    background: #848482;
+}
+
+
+
+/* This is the face effect on the body */
+
+.fade-in {
+   animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+
+   to { 
+     opacity: 1;
+
+   }
+}
+
+/* This is the floating effect */
+
+.floating-text{
+
+    transform: translateY(0);
+    animation: fl1 3s infinite linear;
+
+}
+
+.floating-text::before { 
+
+    content: attr(data-text);
+    animation: fl2 3s infinite linear;
+}
+
+@keyframes fl1 {
+
+    30%{
+       transform: translateY(1.5%);
+
+       }
+}
+
+
+   
