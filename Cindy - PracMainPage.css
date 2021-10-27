@@ -1,0 +1,140 @@
+*{
+
+  margin: 0px;
+  padding: 0xp;
+  box-sizing: border-box;
+}
+
+
+body {
+ background-color: #000;
+
+}
+
+nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     min-height: 8vh;
+     font-family: 'Karla';
+     font-size: .5em;
+}
+
+.logo{
+      color: white;
+      text-Transform: uppercase;
+      letter-spacing: 8px;
+      font-size: 7em;
+      font-family: 'Karla';
+      top: 0; 
+      left: 0;
+      font-weight: bold;
+      padding: 0 30xp;
+      float: left;
+      height: inherit;
+}    
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Karla';
+    font-size: 18px;
+    
+}
+
+.dropbtn {
+  background-color: none;
+  color: white;
+  padding: 50px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 16px 18px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  position: center;
+}
+
+.dropdown-content a:hover {
+    background-color: none; 
+    text-decoration: underline;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: Block;
+  text-align: center;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+
+.fade-in {
+   animation: fadeIn 4s;
+
+}
+
+@keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+
+   }
+}
+
+/* This is the floating effect */
+
+.floating-text{
+
+    transform: translateY(0);
+    animation: fl1 3s infinite linear;
+
+}
+
+.floating-text::before {
+
+    content: attr(data-text);
+    animation: fl2 3s infinite linear;
+}
+
+@keyframes fl1 {
+
+    30%{
+       transform: translateY(10%);
+
+       }
+}
+
+
