@@ -1,0 +1,204 @@
+<!------ Author Karen Kimmel "Add Listing Form" ------>
+<!DOCTYPE html>
+<html>
+    <head>
+	<html lang="en" dir="ltr">
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"/>
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link rel="stylesheet" href="MyListing.css" /> -->
+     
+    <head>
+        <title>Boost | Add Vehicle</title>
+        <!-- This specifies tab title of the page. -->
+		<!-- Menu Bar. -->
+        
+    </head>
+	
+    <body>
+	<!--  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a>BOOST</a></div>
+      <div class="nav-links">
+        <ul class="links">
+          <li><a href="PracMainPage.html">Home</a></li>
+          <li>
+            <a href="#">Account</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="ManageAccount.html">Manage Account</a></li>
+			  <li><a href="MyListing.php">My Listings</a></li>
+              <li><a href="AddListing.html">Add Listings</a></li>
+              <li><a href="Notification.html">Notifications</a></li>
+              <li><a href="logout.php">Logout</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+      </div>
+      </div>
+  </nav> -->
+  
+  	<div class="h1-block">
+					<h1 class="la-text w100">Add a <span>Car</span> Listing</h1>
+					<div class="fs-30 gray arial lh-sm b">
+						<span>Enter your vehicle information to begin your Listing.</span>
+					</div>
+				</div>
+		<!-- <button type="button" class="collapsible">Vehicle Listing Information</button> -->
+        <div class="content">
+            <!-- Create Add Vehicle Form. -->
+            <form method="post" action="AddListing.php" enctype="multipart/form-data">
+		   
+		        <!------ VehicleYear Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleYear" placeholder="Year" id="VehicleYear"  />
+                    </div>
+		   
+		   
+		        <!------ VehicleMake Here ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleMake" placeholder="Make" id="VehicleMake"  />
+                    </div>
+
+      
+		   
+		        <!------ VehicleModel Here ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleModel" placeholder="Model" id="VehicleModel"  />
+                    </div>
+					
+				<!------ Vehicle Price Here. ------>
+		
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehiclePrice" placeholder="Price" id="VehiclePrice"  />
+                    </div>
+              
+		   
+		   
+                    <!------ VehicleVIN Here ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleVIN" placeholder="VIN" id="VehicleVIN"  />
+                    </div>
+
+               
+
+                    <!------ Vehicle Exterior Color Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="VehicleExteriorColor" name="VehicleExteriorColor" placeholder="Exterior Color" id="VehicleExteriorColor"  />
+                    </div>
+					
+                    <!------ Vehicle Interior Color Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="VehicleInteriorColor" name="VehicleInteriorColor" placeholder="Interior Color" id="VehicleInteriorColor"  />
+                    </div>
+                
+				    
+					<!------ Vehicle Body Style Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleBodyStyle" placeholder="Body Style" id="VehicleBodyStyle"  />
+                    </div>
+              
+				
+				<!------ Vehicle Number of Seats Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleNumberofSeats" placeholder="Number of Seats" id="VehicleNumberofSeats"  />
+                    </div>
+                
+				
+				<!------ Vehicle Seat Material Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleSeatMaterial" placeholder="Seat Material" id="VehicleSeatMaterial"  />
+                    </div>
+              
+				
+				<!------ Vehicle Seat Type Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleSeatType" placeholder="Seat Type" id="VehicleSeatType"  />
+                    </div>
+                
+				
+					<!------ Vehicle Number Of Doors Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleNumberofDoors" placeholder="Number Of Doors" id="VehicleNumberofDoors"  />
+                    </div>
+                
+				
+					<!------ Vehicle Engine Type Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleEngineType" placeholder="Engine Type" id="VehicleEngineType"  />
+                    </div>
+               
+				
+					<!------ Vehicle Drive Type Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleDriveType" placeholder="Drive Type" id="VehicleDriveType"  />
+                    </div>
+                
+				
+					<!------ Vehicle Transmission Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleTransmission" placeholder="Transmission" id="VehicleTransmission"  />
+                    </div>
+                
+				
+					<!------ Vehicle Steering Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleSteering" placeholder="Steering" id="VehicleSteering"  />
+                    </div>
+                
+				
+				<!------ Vehicle Fuel Type Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleFuelType" placeholder="Fuel Type" id="VehicleFuelType"  />
+                    </div>
+               
+				
+				<!------ Vehicle Mileage Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleMileage" placeholder="Mileage" id="VehicleMileage"  />
+                    </div>
+               
+				
+				   <!------ Vehicle Description Here. ------>
+                    <div class="input-box">
+                        <span class="details"></span>
+                        <input type="text" name="VehicleDesc" placeholder="Vehicle Description" id="VehicleDesc"  />
+                    </div>
+				
+				<!------ Upload Pictures Here. ------>
+				<div class="input-box">
+				<span class="details"></span>
+				<input type="file" name="uploadfile" value="" />
+				</div>
+				
+				
+                <!------ Create Account Button. ------>
+                <div class="button">
+                    <input class="submit" type="submit" name="registration" id="register" value="Add" />
+                </div>
+            </form>
+       
+		</div>
+    </body>
+</html>
