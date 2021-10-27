@@ -1,45 +1,219 @@
-span {
-    position: relative;
+/* Author Cindy Salpa "NAVBAR" & Karen Kimmel "Add Listings FORM" CSS*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  width: 50%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+body {
+  min-height: 100vh;
+  background-color: #000;
+  font-family: 'Karla';
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #555;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Karla';
+  font-size: .5em;
 }
 
-/* Creates & styles the plus and minus signs*/
-.collapsible:after {
-  content: '\002B';
-  color: white;
+/* POSITIONS THE LOGO AND THE NAVBAR */
+nav .navbar {
+  height: 100%;
+  /* max-width: 1250px; */
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+}
+
+/* STYLES THE LOGO "BOOST" */
+.navbar .logo a {
+  letter-spacing: 7px;
+  font-size: 6em;
+  font-family: 'Karla';
   font-weight: bold;
-  float: left;
-  margin-left: 5px;
-  font-size:1.33333333em;
-  width:1.28571429em;
+  color: #fff;
+  text-decoration: none;
 }
 
-.active:after {
-  content: "\2212";
+/* POSITIONS THE LINKS OF THE NAVBAR */
+nav .navbar .nav-links {
+  line-height: 70px;
+  height: 100%;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  
+/* FIXES THE NAVBAR LINKS POSITION */
+nav .navbar .links {
+  display: flex;
+}
+
+/* FIXES THE NAVBAR AND THE LINKS INSIDE THE DROPDOWN */
+nav .navbar .links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+
+/* STYLES THE NAVBAR LINKS */
+nav .navbar .links li a {
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* CREATES THE ARROW FOR ACCOUNT */
+nav .navbar .links li .arrow {
+  height: 100%;
+  width: 22px;
+  font-size: 17px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* CREATES MOVEMENT FOR THE ARROW FOR ACCOUNT */
+.links li:hover .js-arrow {
+  transform: rotate(180deg);
+}
+
+/* THIS CONTROLS/STYLE THE DROPDOWN MENU LINKS */
+nav .navbar .links li .sub-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  line-height: 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+
+/* THIS CREATES THE DROPDOWN MENU BLOCK */
+nav .navbar .links li:hover .js-sub-menu {
+  display: block;
+}
+
+/* THIS ADDS THE UNDERLINE AFFECT TO THE DROPDOWN MENU */
+.navbar .links li .sub-menu li a:hover {
+   background-color: none; 
+   text-decoration: underline;
+}
+
+/* THIS ADDS STYLE TO THE LINKS OF THE DROPDOWN MENU */
+.navbar .links li .sub-menu a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* FIXES THE POSTION FOR THE NAVBAR LINKS */
+.navbar .nav-links .logo {
+  display: none;
+}
+
+/* FIXES THE POSTION FOR LOGO */
+.navbar .bx-menu {
+  display: none;
+}
+
+/* Author: Karen Kimmel Add Listings FORM CSS */
+.container {
+max-width: 700px;
+width: 100%;
+background: #fff;
+padding: 25px 30px;
+border-radius: 5px;
+margin-left:auto;
+margin-right:auto;
+margin-top: 87px;
+}
+
+.container .title {
+font-size: 25px;
+font-weight: 500;
+position: relative;
+}
+
+.container .title::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 3px;
+width: 30px;
+background: linear-gradient(#71b7e6, #9b59b6);
+}
+
+.container form .user-details {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+margin-bottom: 6px;
+width: calc(100% / 3 - 10px);
+}
+
+.user-details .input-box .details {
+display: block;
+font-weight: 400;
+margin-bottom: 2px;
+}
+
+.user-details .input-box input {
+height: 45px;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 12px;
+border-bottom-width: 2px;
+transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+border-color: #9b59b6
+
+}
+
+form .button {
+	height: 35px;
+	margin: 35px 0;	
+}
+
+form .button input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+	font-weight: 500; 
+	letter-spacing: 1px;
+	border-radius: 5px;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover {
+background: linear-gradient(#848482);    
+cursor: pointer;
 }
