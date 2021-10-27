@@ -1,7 +1,8 @@
+<!------ Author Carlos Rebollar "Login Form" ------>
 <!DOCTYPE html>
 <html>
    <meta charset="utf-8"/>
-   <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"/>
    <link rel="stylesheet" href="LoginPage.css">
    <head>
@@ -21,7 +22,7 @@
       <div class="container">
          <div class="title">Login</div>
          <!------ Login Form ------>
-         <form method="post" action="Login.php">
+         <form method="post" action="Login.php" enctype="multipart/form-data">
             <div class="user-details">
                <!------ Email Here ------>
                <div class="input-box">
